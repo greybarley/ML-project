@@ -65,7 +65,11 @@ class ModelTrainer:
                     'n_estimators': [8,16,32,64,128,256]
                 },
                 "Linear Regression":{},
-                "XGBRegressor":{
+                 "K-Neighbors Regressor": {
+                     'n_neighbors': [3, 5, 7, 9],
+                     'weights': ['uniform', 'distance']
+                     },
+                "XGB Regressor":{
                     'learning_rate':[.1,.01,.05,.001],
                     'n_estimators': [8,16,32,64,128,256]
                 },
